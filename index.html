@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dr. Shahriar Islam | Medicine Specialist | Bangladesh</title>
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<meta name="description" content="Dr. Shahriar Islam, MBBS (STAMC), CCD (BIRDEM), DOC (Derma), CMU (Ultrasound), BMDC registered physician providing ethical and evidence-based medical care in Bangladesh.">
+
+<style>
+:root {
+  --primary: #0b3c5d;
+  --secondary: #1d84b5;
+  --accent: #e8f1f5;
+  --dark: #1a1a1a;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  color: var(--dark);
+  background: #ffffff;
+  line-height: 1.6;
+  user-select: none;
+}
+
+/* NAVBAR */
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(255,255,255,0.95);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 60px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+  z-index: 1000;
+}
+
+nav .logo {
+  font-weight: 700;
+  color: var(--primary);
+  font-size: 1.2rem;
+}
+
+nav a {
+  margin-left: 25px;
+  text-decoration: none;
+  color: var(--dark);
+  font-weight: 500;
+}
+
+nav a:hover { color: var(--secondary); }
+
+.lang-toggle {
+  margin-left: 30px;
+  padding: 6px 14px;
+  border-radius: 20px;
+  border: 1px solid var(--secondary);
+  background: white;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+/* HERO */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 100px 10%;
+  background: linear-gradient(120deg, var(--primary), var(--secondary));
+  color: white;
+  flex-wrap: wrap;
+  margin-top: 60px;
+}
+
+.hero-content { flex: 1 1 500px; }
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.hero-content .slogan {
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin: 20px 0;
+}
+
+.hero-content button {
+  padding: 14px 30px;
+  border: none;
+  background: white;
+  color: var(--primary);
+  font-size: 1rem;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.hero-photo {
+  flex: 1 1 400px;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-photo img {
+  max-width: 100%;
+  max-height: 450px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+/* SECTION */
+section { padding: 100px 80px; }
+section h2 { font-size: 2.2rem; color: var(--primary); }
+
+/* ABOUT */
+.about {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+}
+
+.about-box {
+  background: var(--accent);
+  padding: 40px;
+  border-radius: 20px;
+}
+
+/* SERVICES */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+.card {
+  padding: 30px;
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+}
+
+/* FOOTER */
+footer {
+  background: var(--primary);
+  color: white;
+  text-align: center;
+  padding: 30px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  nav { padding: 15px 25px; }
+  .hero { flex-direction: column; text-align: center; }
+  section { padding: 80px 20px; }
+  .about { grid-template-columns: 1fr; }
+}
+</style>
+
+</head>
+<body>
+
+<!-- NAVIGATION -->
+<nav>
+  <div class="logo">Dr. Shahriar Islam</div>
+  <div>
+    <a href="#home" data-en="Home" data-bn="হোম">Home</a>
+    <a href="#services" data-en="Expertise" data-bn="দক্ষতা">Expertise</a>
+    <a href="#about" data-en="Profile" data-bn="প্রোফাইল">Profile</a>
+    <a href="#contact" data-en="Contact" data-bn="যোগাযোগ">Contact</a>
+    <button class="lang-toggle" onclick="toggleLanguage()">বাংলা</button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-content">
+    <h1>Dr. Shahriar Islam</h1>
+    <p>MBBS (STAMC) | CCD (BIRDEM) | DOC (Derma) | CMU (Ultrasound)</p>
+
+    <div class="slogan"
+      data-en="Healthy Living, Healthier Communities"
+      data-bn="সুস্থ থাকি, সুস্থ রাখি 🩺">
+      Healthy Living, Healthier Communities
+    </div>
+
+    <button
+      data-en="Book Consultation"
+      data-bn="অ্যাপয়েন্টমেন্ট নিন">
+      Book Consultation
+    </button>
+  </div>
+
+  <div class="hero-photo">
+    <img src="./images/photo1.png" alt="Dr. Shahriar Islam">
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <h2 data-en="Professional Profile" data-bn="পেশাগত প্রোফাইল">Professional Profile</h2>
+  <div class="about">
+    <div>
+      <p data-en="Ethical, evidence-based medical care with patient-centered focus."
+         data-bn="নৈতিক ও প্রমাণভিত্তিক চিকিৎসা সেবা প্রদান।">
+         Ethical, evidence-based medical care with patient-centered focus.
+      </p>
+    </div>
+    <div class="about-box">
+      <p><strong>BMDC:</strong> Registered</p>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer id="contact">
+  <p>© 2026 Dr. Shahriar Islam</p>
+</footer>
+
+<!-- LANGUAGE SCRIPT -->
+<script>
+let currentLang = localStorage.getItem("lang") || "en";
+
+function applyLanguage(lang) {
+  document.querySelectorAll("[data-en]").forEach(el => {
+    el.innerText = el.getAttribute(`data-${lang}`);
+  });
+  document.querySelector(".lang-toggle").innerText =
+    lang === "en" ? "বাংলা" : "EN";
+  localStorage.setItem("lang", lang);
+}
+
+function toggleLanguage() {
+  currentLang = currentLang === "en" ? "bn" : "en";
+  applyLanguage(currentLang);
+}
+
+applyLanguage(currentLang);
+</script>
+
+</body>
+</html>
